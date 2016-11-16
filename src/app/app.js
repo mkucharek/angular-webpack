@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 
+import home from './features/home'
 import routing from './app.config.js'
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -22,7 +23,7 @@ class AppCtrl {
 
 const MODULE_NAME = 'app';
 
-angular.module(MODULE_NAME, [uirouter])
+angular.module(MODULE_NAME, [uirouter, home])
   .config(routing)
   .directive('app', app)
   .controller('AppCtrl', AppCtrl);
