@@ -1,6 +1,6 @@
-routing.$inject = ['$stateProvider'];
-
 export default function routing($stateProvider) {
+    'ngInject';
+
     var helloState = {
         name: 'hello',
         url: '/hello',
